@@ -1,0 +1,119 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<style>
+main {
+	width: 1000px;
+	float: left;
+	margin-bottom: 10px;
+}
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+nav {
+    background-color:#eeeeee;
+	text-align:center;
+	padding:5px;
+}
+section {
+	background-color:#bbbbbb;
+	margin-top: 10px;
+    float:left;
+    padding:100px; 
+}
+article{
+	background-color: lightgrey;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+body {
+	margin-top: 10px;
+	background-color: lightgrey;
+}
+aside {
+	margin-top: 10px;
+	background-color: #bbbbbb;
+	width: 270px;
+	float: right;
+	padding: 5px;
+}
+</style>
+<title>M.C. Flooring, Professional Installation</title>
+</head>
+<body>
+<button type="button" onclick="buttonColor()">Click here to set background color to green.</button>
+<script>
+function buttonColor() {
+    document.body.style.backgroundColor = "green";
+}
+</script>
+<button type="button2" onclick="backColor()">Click here to set background color to light grey.</button>
+<script>
+function backColor() {
+    document.body.style.backgroundColor = "lightgrey";
+}
+</script>
+<header>
+<div align="center">
+<h1>
+<a href="index.html">
+<font color="blue"
+      onMouseOver="this.style.color = 'red'"
+      onMouseOut="this.style.color = 'blue'">M.C. Flooring, Professional Installation</font>
+</a>
+</h1>
+</div>
+</header>
+<nav>
+</body>
+<ul>
+<li style="font-size:25px; display:inline; padding: 0 200px 0 0">
+<a href="BeforeAfter.html">Before / After</a></li>
+<li style="font-size:25px; display:inline; padding: 0 200px 0 0">
+<a href="contact.html">Contact Us</a></li>
+<li style="font-size:25px; display:inline; padding: 0 0 0 0">
+<script type="text/javascript">
+function confirm_alert(node) {
+    return confirm("You are about to leave this website and go to another. Please click on OK if you wish to continue.");
+}
+</script>
+<a href="http://www.armstrong.com" onclick="return confirm_alert(this);">Inspiring Great Spaces</a>
+</li>
+</ul>
+</nav>
+<main>
+<section>
+<article>
+<h2 style="font-weight:bold">A Flooring Experience You Can Enjoy</h2>
+<p>Our aim is give you a friendly and professional flooring experience.</p>
+<h3 style="font-weight:bold">Certified Flooringcovering Installers</h3>
+We stand behind what you're standing on.
+</article>
+</section>
+</main>
+<aside>
+<p>Just click the top banner to return to our homepage.</p>
+<p id="dt_button"></p>
+<button onclick="dtDisplay()">Click here for current date and time.</button>
+<script>
+function dtDisplay() {
+	alert("This is your local time and date. Click again to update.")
+	document.getElementById('dt_button').innerHTML = Date();
+}
+</script>
+</aside>
+<footer style="text-align:center">
+<font color="blue"
+      onMouseOver="this.style.color = 'red'"
+      onMouseOut="this.style.color = 'blue'">&copy; 2015 M.C. Flooring, Professional Installation</font>
+<img src="Images/MCFlooringLogo.png" height=45 width=75>
+</footer>
+</html>

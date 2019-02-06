@@ -1,0 +1,177 @@
+<!DOCTYPE html5>
+<html>
+<head>
+<script>
+function validateForm() {
+    var name1 = document.forms["contactForm"]["name"].value;
+	var email1 = document.forms["contactForm"]["email"].value;
+    var phone1 = document.forms["contactForm"]["phone"].value;
+	
+	if (name1 == null || name1 == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+	if (email1 == null || email1 == "") {
+        alert("Please fill in your email");
+        return false;
+    }
+	if (phone1 == null || phone1 == "") {
+        alert("Please fill in your phone number");
+        return false;
+    }
+}
+</script>
+<style>
+main {
+	width: 1000px;
+	float: left;
+	margin-bottom: 10px;
+}
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+nav {
+    background-color:#eeeeee;
+	text-align:center;
+	padding:5px;
+}
+section {
+	background-color:#bbbbbb;
+	margin-top: 10px;
+    float:left;
+    padding:100px; 
+}
+article{
+	background-color: lightgrey;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+body {
+	margin-top: 10px;
+	background-color: lightgrey;
+}
+aside {
+	margin-top: 10px;
+	padding: 5px;
+	background-color: #bbbbbb;
+	width: 270px;
+	float: right;
+}
+legend {
+	font-size: 15px;
+	padding: 5px;
+	background-color: lightblue;
+}
+</style>
+<title>M.C. Flooring, Professional Installation</title>
+</head>
+<body>
+<button type="button" onclick="buttonColor()">Click here to set background color to green.</button>
+<script>
+function buttonColor() {
+    document.body.style.backgroundColor = "green";
+}
+</script>
+<button type="button2" onclick="backColor()">Click here to set background color to light grey.</button>
+<script>
+function backColor() {
+    document.body.style.backgroundColor = "lightgrey";
+}
+</script>
+<header>
+<div align="center">
+<h1>
+<a href="index.html">
+<font color="blue"
+      onMouseOver="this.style.color = 'red'"
+      onMouseOut="this.style.color = 'blue'">M.C. Flooring, Professional Installation</font>
+</a>
+</h1>
+</div>
+</header>
+<nav>
+<ul>
+<li style="font-size:25px; display:inline; padding: 0 200px 0 0">
+<a href="BeforeAfter.html">Before / After</a></li>
+<li style="font-size:25px; display:inline; padding: 0 200px 0 0">
+<a href="contact.html">Contact Us</a></li>
+<li style="font-size:25px; display:inline; padding: 0 0 0 0">
+<script type="text/javascript">
+function confirm_alert(node) {
+    return confirm("You are about to leave this website and go to another. Please click on OK if you wish to continue.");
+}
+</script>
+<a href="http://www.armstrong.com" onclick="return confirm_alert(this);">Inspiring Great Spaces</a>
+</li>
+</ul>
+</nav>
+</body>
+<main>
+<section>
+<article>
+<h2 style="font-weight:bold">Contact Us - Email, Phone or in person.</h2>
+<p>Email us at MCFlooring@gmail.com or<br> fill out and submit the form on the right of this page.</p>
+<p>Give us a call at 1-715-XXX-XXXX.<br>Please leave a detailed message if you reach the voice mail.</p>
+<p>Come see us in person during store hours.</p>
+<p>Monday - Friday 8am-6pm</p>
+<p>Saturday 10am-3pm</p>
+<p>Closed Sundays</p>
+</article>
+<article>
+<h3 style="font-weight:bold">Certified Flooringcovering Installers</h3>
+We stand behind what you're standing on.
+</article>
+</section>
+</main>
+<aside>
+<p>Just click the top banner to return to our homepage.</p>
+<p id="dt_button"></p>
+<button onclick="dtDisplay()">Click here for current date and time.</button>
+<script>
+function dtDisplay() {
+	alert("This is your local time and date. Click again to update.")
+	document.getElementById('dt_button').innerHTML = Date();
+}
+</script>
+<form id="contactForm" name="contactForm"  
+action="mailto:lunaticasey@gmail.com" 
+method="post" 
+onsubmit="return validateForm()">
+<fieldset>
+	<legend>Fill out and submit your contact information below</legend>
+		Name:
+		<input placeholder="Please enter your name." class="input" 
+		id="name" name="name" type="text" value="" size="30" /><br />
+		
+		E-mail:
+		<input placeholder="Please enter your email address." class="input" 
+		id="email" name="email" type="text" value="" size="30" /><br />
+		
+		Phone number:
+		<input placeholder="123-456-7890." class="input" 
+		id="phone" name="phone" type="text" value="" size="10" /><br />
+		
+		Your comments:
+		<textarea placeholder="Please enter any comments or other information here." class="input" 
+		id="message" name="message" rows="7" cols="30"></textarea><br />
+	
+	<input name="submit_button" type="submit" value="Submit form" onlick="validateForm/>
+	<input type="reset" value="Reset" name="reset" />
+</fieldset>
+</form>
+</aside>
+<footer style="text-align:center">
+<font color="blue"
+      onMouseOver="this.style.color = 'red'"
+      onMouseOut="this.style.color = 'blue'">&copy; 2015 M.C. Flooring, Professional Installation</font>
+<img src="Images/MCFlooringLogo.png" height=45 width=75>
+</footer>
+</html>
